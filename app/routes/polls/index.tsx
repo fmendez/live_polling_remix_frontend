@@ -13,8 +13,8 @@ export default function Polls() {
 
 	return (
 		<div>
-			<h1>Polls</h1>
-			<ul>
+			<h1 className="text-3xl font-bold text-purple-800 mb-6">Polls</h1>
+			<ul className="space-y-4">
 				{polls.map((poll: Poll) => (
 					<li key={poll.id}>
 						<PollCard poll={poll} />

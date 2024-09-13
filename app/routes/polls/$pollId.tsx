@@ -13,12 +13,17 @@ export default function Poll() {
 	const poll = useLoaderData<typeof loader>();
 
 	return (
-		<div>
-			<h1>{poll.title}</h1>
-			<p>{poll.description}</p>
-			<ul>
+		<div className="bg-yellow-50 rounded-lg shadow-md p-6">
+			<h1 className="text-3xl font-bold text-yellow-800 mb-4">{poll.title}</h1>
+			<p className="text-yellow-700 mb-6">{poll.description}</p>
+			<ul className="space-y-2">
 				{poll.options.map((option: PollOption) => (
-					<li key={option.id}>{option.content}</li>
+					<li
+						key={option.id}
+						className="bg-yellow-100 p-3 rounded-md text-yellow-800 hover:bg-yellow-200 transition duration-300"
+					>
+						{option.content}
+					</li>
 				))}
 			</ul>
 		</div>
