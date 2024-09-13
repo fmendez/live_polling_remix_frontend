@@ -1,7 +1,7 @@
 import { Link } from "@remix-run/react";
-import type { Poll } from "~/lib/types";
+import type { PollData } from "~/lib/types";
 
-export default function PollCard({ poll }: { poll: Poll }) {
+export default function PollCard({ poll }: { poll: PollData }) {
 	return (
 		<div className="bg-blue-100 rounded-lg shadow-md p-6 mb-4">
 			<h2 className="text-xl font-semibold text-blue-800 mb-2">{poll.title}</h2>

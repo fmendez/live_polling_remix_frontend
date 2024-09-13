@@ -1,8 +1,8 @@
-export interface Poll {
+export interface PollData {
     id: number;
     title: string;
     description: string;
-    options: PollOption[];
+    options: PollOption[]
 }
 
 export interface PollOption {
