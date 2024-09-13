@@ -8,4 +8,5 @@ export interface Poll {
 export interface PollOption {
     id: number;
     content: string;
+    votes?: { id: number }[];
 }
